@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>내 블로그</h1>
-    <p>Flask 연결 성공</p>
-</body>
-</html>
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<h1>내 블로그</h1>
+<p>여기는 메인 페이지</p>
+{% for post in posts %}
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.content }}</p>
+{% endfor %}
+
+{% endblock %}

@@ -1,3 +1,11 @@
-<h1>샘플 글 제목</h1>
-<p>이것은 샘플 글 내용입니다.</p>
-<a href="/">홈으로</a>
+{% extends "base.html" %}
+
+{% block content %}
+
+<article> 
+<h2>{{ post.title }}</h2>
+<p>{{ post.content }}</p>
+</article>
+
+<a href="/">목록으로</a>
+{% endblock %}
