@@ -1,0 +1,77 @@
+
+## 🛠️ 기술 스택
+
+* Python
+* Flask
+* SQLite
+* HTML / CSS / JavaScript
+
+---
+
+## ⚙️ 실행 방법 (Git Bash 기준)
+
+### 1. 저장소 클론
+
+```
+git clone https://github.com/아이디/레포이름.git
+cd 레포이름
+```
+
+---
+
+### 2. 가상환경 생성
+
+```
+python -m venv .venv
+```
+
+---
+
+### 3. 가상환경 활성화
+
+```
+source .venv/Scripts/activate
+```
+
+---
+
+### 4. 패키지 설치
+
+```
+pip install -r requirements.txt
+```
+
+---
+
+### 5. 서버 실행
+
+```
+python app.py
+```
+
+---
+
+### 6. 접속
+
+```
+http://127.0.0.1:5000
+```
+
+---
+
+## 📁 폴더 구조
+
+```
+personal-blog/
+│
+├─ app.py
+├─ blog.db
+├─ requirements.txt
+│
+├─ templates/
+│   └─ index.html
+│
+└─ static/
+    ├─ style.css
+    └─ script.js
+```
